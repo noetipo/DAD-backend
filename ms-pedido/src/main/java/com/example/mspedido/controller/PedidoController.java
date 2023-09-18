@@ -31,6 +31,7 @@ public class PedidoController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Pedido> listById(@PathVariable(required = true) Integer id) {
+        System.out.println("Pedido+ " + id);
         return ResponseEntity.ok().body(pedidoService.listarPorId(id).get());
     }
 
