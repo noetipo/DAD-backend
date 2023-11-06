@@ -1,11 +1,12 @@
 server:
   port: 8080
-
 eureka:
   client:
     serviceUrl:
+      #defaultZone: http://localhost:8090/eureka
       defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
   instance:
+    #hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 spring:
   cloud:
@@ -22,7 +23,7 @@ spring:
               - DELETE
       discovery:
         locator:
-          enabled: true
+          enable: true
       routes:
         - id: ms-catalogo-service
           uri: lb://ms-catalogo-service
@@ -30,23 +31,16 @@ spring:
             - Path=/categoria/**,/producto/**
           filters:
             - AuthFilter
+        - id: ms-cliente-service
+          uri: lb://ms-cliente-service
+          predicates:
+            - Path=/cliente/**
+
+        - id: ms-pedido-service
+          uri: lb://ms-pedido-service
+          predicates:
+            - Path=/pedido/**
         - id: ms-auth-service
           uri: lb://ms-auth-service
           predicates:
             - Path=/auth/**
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: ALWAYS
-        #- id: ms-evento-service
-        #  uri: lb://ms-evento-service
-        #  predicates:
-        #    - Path=/evento/**
-        #- id: ms-asistencia-service
-        #  uri: lb://ms-asistencia-service
-        #  predicates:
-      #    - Path=/asistencia/**
