@@ -8,7 +8,7 @@ import {Client} from "../../models/client";
   template: `
       <div class="float-end">
           <button type="button" (click)="goNew()" class="btn-gm-danger">
-              <span class="{{ abcForms.btnNew.icon }} lamb-icon"></span> {{ abcForms.btnNew.label }} Periodo
+              <span class="{{ abcForms.btnNew.icon }} lamb-icon"></span> {{ abcForms.btnNew.label }} Cliente
           </button>
       </div>
       <div class="responsive-table">

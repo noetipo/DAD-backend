@@ -346,8 +346,6 @@ export const abcForms = {
   }
 };
 
-
-
 export const months = [
   {id: '01', text: 'Enero'},
   {id: '02', text: 'Febrero'},
@@ -362,56 +360,10 @@ export const months = [
   {id: '11', text: 'Noviembre'},
   {id: '12', text: 'Diciembre'},
 ];
-export const AfectationTypes = [
-  {id: 10, value: 'Grabado-Operacíon oneroza [10]'},
-  // {id: 11, value: '[Gratuita] Gravado-Retiro por premio [11]'},
-  // {id: 12, value: '[Gratuita] Gravado-Retiro donación [12]'},
-  // {id: 13, value: '[Gratuita] Gravado-Retiro [13]'},
-  // {id: 14, value: '[Gratuita] Gravado-Retiro por publicidad [14]'},
-  // {id: 15, value: '[Gratuita] Gravado-Bonificaciones[15]'},
-  // {id: 16, value: '[Gratuita] Gravado-Retiro por entrega de trabajadores[16]'},
-  {id: 20, value: 'Exonerado- Operación Onerosa[20]'},
-  {id: 30, value: 'Inafecto-Operación Onerosa[30]'},
-  // {id: 31, value: '[Gratuita] Inafecto-Retiro por Bonificación[31]'},
-  // {id: 32, value: '[Gratuita] Inafecto-Retiro[32]'},
-  // {id: 33, value: '[Gratuita] Inafecto-Retiro por Muestras Médicas[33]'},
-  // {id: 34, value: '[Gratuita] Inafecto-Retiro por Convenio Colectivo[34]'},
-  // {id: 35, value: '[Gratuita] Inafecto-Retiro por premio[35]'},
-  // {id: 36, value: '[Gratuita] Inafecto-Retiro por publicidad[36]'},
-  // {id: 40, value: 'Exportación[40]'},
-];
-export const types = [
-  {id: '01', nombre: 'INVENTARIO'},
-  {id: '02', nombre: 'INTERIOR VEHÍCULO'},
-  {id: '03', nombre: 'FLUIDOS'},
-  {id: '04', nombre: 'EXTERIOR DEL VEHICULO'},
-  {id: '05', nombre: 'DEBAJO DEL VEHICULO'},
-  {id: '06', nombre: 'COMPORTAMIENTO DEL MOTOR'},
 
-  {id: '07', nombre: 'PASTILLAS DEL FRENO'},
-  {id: '08', nombre: 'PRESIÓN DE NEUMATICOS'},
-  {id: '09', nombre: 'DISCOS DE FRENOS'},
-  {id: '10', nombre: 'PASTILLAS DE FRENOS 2'},
-  {id: '11', nombre: 'ESPARRAGOS'},
-  {id: '12', nombre: 'TAMBORES DE FRENO'},
-  {id: '13', nombre: 'SISTEMA DE REMOLQUE'},
-];
-
-export const typesReceta = [
-  {id: '01', nombre: 'Ad'},
-  {id: '02', nombre: 'In Ve'},
-];
 
 export const TypeDocument = [
   {id: '1', nombre: 'DNI'},
   {id: '6', nombre: 'RUC'},
 ];
-export const wayToPay = [
-  {id: '01', nombre: 'CONTADO'},
-  {id: '02', nombre: 'CHEQUE'},
-  {id: '03', nombre: 'CREDITO'},
-];
-export const printingCompanys = [
-  {id: '01', nombre: 'ANTAPACAY'},
-  {id: '02', nombre: 'EMPRESA 2'},
-];
+

@@ -8,6 +8,8 @@ import {ConfirmDialogModule, FormsComponentValidModule, PaginationModule} from '
 import {ButtonModule, CardModule, GridModule} from '@coreui/angular';
 import {ClientListComponent} from "./components/list/client-list.component";
 import {ClientsService} from "../../../../providers/services/setup/clients.service";
+import {ClientNewComponent} from "./components/forms/client-new.component";
+import {ClientEditComponent} from "./components/forms/client-edit.component";
 
 const SHARED_MODULES: any[] = [
   ConfirmDialogModule,
@@ -15,7 +17,7 @@ const SHARED_MODULES: any[] = [
   PaginationModule,
 ];
 
-const COMPONENTS: any[] = [ClientListComponent];
+const COMPONENTS: any[] = [ClientListComponent, ClientNewComponent, ClientEditComponent];
 
 const SERVICES: any[] = [ClientsService];
 
